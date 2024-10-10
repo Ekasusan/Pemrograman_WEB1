@@ -1,0 +1,6 @@
+.pricing-plan .plan-image {
+    width: 100%; /* Mengatur lebar gambar 100% agar memenuhi container */
+    height: auto; /* Menjaga rasio aspek gambar */
+    border-bottom: 1px solid #9c6161; /* Menambahkan border di bagian bawah gambar */
+    margin-bottom: 15px; /* Memberikan ruang di bawah gambar */
+}

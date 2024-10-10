@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Website Pricing</title>
+    <link rel="stylesheet" href="peronal.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing-table {
+
+            width: 100%;
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: space-between; /* Mengatur jarak antar elemen */
+            align-items: flex-start;
+        }
+        
+        .pricing-plan {
+            margin: 20px;
+            padding: 20px;
+            width: calc(33.33% - 40px); /* Menyesuaikan lebar agar sejajar */
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Mengatur teks di tengah */
+            display: flex;
+            flex-direction: column; /* Mengatur agar konten dalam kolom tersusun vertikal */
+            justify-content: space-between; /* Mengatur agar kolom mulai dari atas */
+            height: 50%; /* Membuat tinggi kolom 100% dari container */
+            margin-bottom: 50px;
+        }
+        
+        .pricing-plan h2 {
+            margin-top: 10px;
+        }
+
+        .pricing-plan img {
+            max-width: 50%; /* Mengatur gambar agar tidak melebihi container */
+            height: 150px; /* Menjaga tinggi gambar sama */
+            object-fit: cover; /* Memastikan gambar memenuhi area */
+            border-bottom: 1px solid #9c6161; /* Menambahkan border bawah */
+            margin-bottom: 15px;
+            border-radius: 50px;
+            margin-left: 25%;
+ 
+        }
+        
+        .pricing-plan ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-grow: 1; /* Membuat ul mengambil ruang yang tersisa */
+        }
+        
+        .pricing-plan li {
+            margin-bottom: 10px;
+        }
+        
+        .pricing-plan .price {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .pricing-plan .button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .pricing-plan .button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pricing Plans</h1>
+        <div class="pricing-table">
+            <div class="pricing-plan">
+                <img src="image/personal.jpg" alt="Personal Plan">
+                <h2>Personal</h2>
+                <ul>
+                    <li>Custom domains</li>
+                    <li>Sleeps after 30 mins of inactivity</li>
+                </ul>
+                <div class="price">FREE</div>
+                <button class="button">Sign up</button>
+            </div>
+            <div class="pricing-plan">
+                <img src="image/gambar3.jpg" alt="Enterprise Plan">
+                <h2>Enterprise</h2>
+                <ul>
+                    <li>Dedicated</li>
+                    <li>Simple horizontal scalability</li>
+                </ul>
+                <div class="price">$400</div>
+                <button class="button">Free Trial</button>
+            </div>
+            <div class="pricing-plan">
+                <img src="image/boneka.jpg" alt="Small Team Plan">
+                <h2>Small Team</h2>
+                <ul>
+                    <li>Never sleeps</li>
+                    <li>Multiple workers for more powerful apps</li>
+                </ul>
+                <div class="price">$150</div>
+                <button class="button">Free Trial</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
