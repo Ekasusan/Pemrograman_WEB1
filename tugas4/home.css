@@ -13,5 +13,8 @@ header {
     display: flex;
     justify-content: space-between;
 }
-
+.products img {
+    max-width: 200px;
+    justify-content: center;
+}
 /* Tambahkan lebih banyak aturan CSS untuk mengatur tampilan */
